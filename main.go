@@ -19,7 +19,7 @@ func main() {
 	mqttOpts.SetClientID("test-client")
 	client := mqtt.NewClient(mqttOpts)
 	if token := client.Connect(); token.Wait() && token.Error() != nil {
-		log.Println("error occured creating the mqtt client:", token.Error())
+		log.Panic("error occured creating the mqtt client:", token.Error())
 	}
 	rand.Seed(time.Now().UnixNano())
 	log.Println("publishing to topic topic/test")
