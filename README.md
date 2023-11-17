@@ -11,4 +11,4 @@ Once in the directory, run the script ``go mod tidy`` to fetch the necessary dep
 
 Once the dependencies are installed, run the script by typing ``go run main.go`` into the terminal.
 
-This will immediately starts sending a random speed value in JSON format specified in the document every second. The hard coded MQTT broker host is assumed as ``localhost:1883``, the standard default unencrypted MQTT port.
+This will immediately starts sending a random speed value in JSON format specified in the document every second. The hard coded MQTT broker host is assumed as ``localhost:1883``, the standard unencrypted MQTT port.
